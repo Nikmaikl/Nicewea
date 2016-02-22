@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE949CF21C0F86BA00B4D82D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE949CF11C0F86BA00B4D82D /* NotificationCenter.framework */; };
+		CE949CF51C0F86BA00B4D82D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE949CF41C0F86BA00B4D82D /* TodayViewController.swift */; };
+		CE949CF81C0F86BA00B4D82D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE949CF61C0F86BA00B4D82D /* MainInterface.storyboard */; };
+		CE949CFC1C0F86BA00B4D82D /* NiceWeaToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE949CEF1C0F86BA00B4D82D /* NiceWeaToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE949D031C0F88D400B4D82D /* ForecastParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6B9B81C0C9E9E003CF439 /* ForecastParser.swift */; };
+		CEBD24691C0A111300C30E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD24681C0A111300C30E8B /* AppDelegate.swift */; };
+		CEBD246B1C0A111300C30E8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD246A1C0A111300C30E8B /* ViewController.swift */; };
+		CEBD246E1C0A111300C30E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBD246C1C0A111300C30E8B /* Main.storyboard */; };
+		CEBD24701C0A111300C30E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBD246F1C0A111300C30E8B /* Assets.xcassets */; };
+		CEBD24731C0A111300C30E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBD24711C0A111300C30E8B /* LaunchScreen.storyboard */; };
+		CEC6B9B91C0C9E9E003CF439 /* ForecastParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6B9B81C0C9E9E003CF439 /* ForecastParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE949CFA1C0F86BA00B4D82D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBD245D1C0A111300C30E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE949CEE1C0F86BA00B4D82D;
+			remoteInfo = NiceWeaToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE949D001C0F86BA00B4D82D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE949CFC1C0F86BA00B4D82D /* NiceWeaToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE949CEF1C0F86BA00B4D82D /* NiceWeaToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NiceWeaToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE949CF11C0F86BA00B4D82D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CE949CF41C0F86BA00B4D82D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		CE949CF71C0F86BA00B4D82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CE949CF91C0F86BA00B4D82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE949D011C0F880A00B4D82D /* Nicewea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Nicewea.entitlements; sourceTree = "<group>"; };
+		CE949D021C0F88B300B4D82D /* NiceWeaToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NiceWeaToday.entitlements; sourceTree = "<group>"; };
+		CEBD24651C0A111300C30E8B /* Nicewea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nicewea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBD24681C0A111300C30E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEBD246A1C0A111300C30E8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEBD246D1C0A111300C30E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEBD246F1C0A111300C30E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEBD24721C0A111300C30E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEBD24741C0A111300C30E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC6B9B81C0C9E9E003CF439 /* ForecastParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE949CEC1C0F86BA00B4D82D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE949CF21C0F86BA00B4D82D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBD24621C0A111300C30E8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE949CF01C0F86BA00B4D82D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE949CF11C0F86BA00B4D82D /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE949CF31C0F86BA00B4D82D /* NiceWeaToday */ = {
+			isa = PBXGroup;
+			children = (
+				CE949D021C0F88B300B4D82D /* NiceWeaToday.entitlements */,
+				CE949CF41C0F86BA00B4D82D /* TodayViewController.swift */,
+				CE949CF61C0F86BA00B4D82D /* MainInterface.storyboard */,
+				CE949CF91C0F86BA00B4D82D /* Info.plist */,
+			);
+			path = NiceWeaToday;
+			sourceTree = "<group>";
+		};
+		CEBD245C1C0A111300C30E8B = {
+			isa = PBXGroup;
+			children = (
+				CEBD24671C0A111300C30E8B /* Nicewea */,
+				CE949CF31C0F86BA00B4D82D /* NiceWeaToday */,
+				CE949CF01C0F86BA00B4D82D /* Frameworks */,
+				CEBD24661C0A111300C30E8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEBD24661C0A111300C30E8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEBD24651C0A111300C30E8B /* Nicewea.app */,
+				CE949CEF1C0F86BA00B4D82D /* NiceWeaToday.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEBD24671C0A111300C30E8B /* Nicewea */ = {
+			isa = PBXGroup;
+			children = (
+				CE949D011C0F880A00B4D82D /* Nicewea.entitlements */,
+				CEC6B9B71C0C9E82003CF439 /* Model */,
+				CEBD24681C0A111300C30E8B /* AppDelegate.swift */,
+				CEBD246A1C0A111300C30E8B /* ViewController.swift */,
+				CEBD246C1C0A111300C30E8B /* Main.storyboard */,
+				CEBD246F1C0A111300C30E8B /* Assets.xcassets */,
+				CEBD24711C0A111300C30E8B /* LaunchScreen.storyboard */,
+				CEBD24741C0A111300C30E8B /* Info.plist */,
+			);
+			path = Nicewea;
+			sourceTree = "<group>";
+		};
+		CEC6B9B71C0C9E82003CF439 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6B9B81C0C9E9E003CF439 /* ForecastParser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE949CEE1C0F86BA00B4D82D /* NiceWeaToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE949CFF1C0F86BA00B4D82D /* Build configuration list for PBXNativeTarget "NiceWeaToday" */;
+			buildPhases = (
+				CE949CEB1C0F86BA00B4D82D /* Sources */,
+				CE949CEC1C0F86BA00B4D82D /* Frameworks */,
+				CE949CED1C0F86BA00B4D82D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NiceWeaToday;
+			productName = NiceWeaToday;
+			productReference = CE949CEF1C0F86BA00B4D82D /* NiceWeaToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CEBD24641C0A111300C30E8B /* Nicewea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBD24771C0A111300C30E8B /* Build configuration list for PBXNativeTarget "Nicewea" */;
+			buildPhases = (
+				CEBD24611C0A111300C30E8B /* Sources */,
+				CEBD24621C0A111300C30E8B /* Frameworks */,
+				CEBD24631C0A111300C30E8B /* Resources */,
+				CE949D001C0F86BA00B4D82D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE949CFB1C0F86BA00B4D82D /* PBXTargetDependency */,
+			);
+			name = Nicewea;
+			productName = Nicewea;
+			productReference = CEBD24651C0A111300C30E8B /* Nicewea.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEBD245D1C0A111300C30E8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Ocode;
+				TargetAttributes = {
+					CE949CEE1C0F86BA00B4D82D = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3PU2FE6BA7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CEBD24641C0A111300C30E8B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3PU2FE6BA7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CEBD24601C0A111300C30E8B /* Build configuration list for PBXProject "Nicewea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEBD245C1C0A111300C30E8B;
+			productRefGroup = CEBD24661C0A111300C30E8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEBD24641C0A111300C30E8B /* Nicewea */,
+				CE949CEE1C0F86BA00B4D82D /* NiceWeaToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE949CED1C0F86BA00B4D82D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE949CF81C0F86BA00B4D82D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBD24631C0A111300C30E8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBD24731C0A111300C30E8B /* LaunchScreen.storyboard in Resources */,
+				CEBD24701C0A111300C30E8B /* Assets.xcassets in Resources */,
+				CEBD246E1C0A111300C30E8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE949CEB1C0F86BA00B4D82D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE949CF51C0F86BA00B4D82D /* TodayViewController.swift in Sources */,
+				CE949D031C0F88D400B4D82D /* ForecastParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBD24611C0A111300C30E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBD246B1C0A111300C30E8B /* ViewController.swift in Sources */,
+				CEC6B9B91C0C9E9E003CF439 /* ForecastParser.swift in Sources */,
+				CEBD24691C0A111300C30E8B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE949CFB1C0F86BA00B4D82D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE949CEE1C0F86BA00B4D82D /* NiceWeaToday */;
+			targetProxy = CE949CFA1C0F86BA00B4D82D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE949CF61C0F86BA00B4D82D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE949CF71C0F86BA00B4D82D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBD246C1C0A111300C30E8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBD246D1C0A111300C30E8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEBD24711C0A111300C30E8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEBD24721C0A111300C30E8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE949CFD1C0F86BA00B4D82D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NiceWeaToday/NiceWeaToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NiceWeaToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.Nicewea.NiceWeaToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE949CFE1C0F86BA00B4D82D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NiceWeaToday/NiceWeaToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NiceWeaToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.Nicewea.NiceWeaToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CEBD24751C0A111300C30E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEBD24761C0A111300C30E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEBD24781C0A111300C30E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Nicewea/Nicewea.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Nicewea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.Nicewea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CEBD24791C0A111300C30E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Nicewea/Nicewea.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Nicewea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.Nicewea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE949CFF1C0F86BA00B4D82D /* Build configuration list for PBXNativeTarget "NiceWeaToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE949CFD1C0F86BA00B4D82D /* Debug */,
+				CE949CFE1C0F86BA00B4D82D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEBD24601C0A111300C30E8B /* Build configuration list for PBXProject "Nicewea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBD24751C0A111300C30E8B /* Debug */,
+				CEBD24761C0A111300C30E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBD24771C0A111300C30E8B /* Build configuration list for PBXNativeTarget "Nicewea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBD24781C0A111300C30E8B /* Debug */,
+				CEBD24791C0A111300C30E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEBD245D1C0A111300C30E8B /* Project object */;
+}
